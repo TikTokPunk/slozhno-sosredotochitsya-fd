@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --bg-image: url('../images/cover-image-dark.png');
   --title-color: #DB00FF;
@@ -98,7 +103,6 @@
 }
 
 .header__theme-menu-item {
-  padding-top: 2px;
   height: 24px;
 }
 
@@ -115,6 +119,7 @@
 .header__theme-menu-button_active {
   border-color: 1px solid var(--background-color);
   pointer-events: none;
+  margin-top: 2px;
 }
 
 .header__theme-menu-button:hover {
@@ -132,7 +137,7 @@
 .header__text {
   display: flex;
   flex-direction: column;
-  padding: 162px 0 92px;
+  padding: 240px 0 92px;
   gap: 71px;
 }
 
@@ -170,6 +175,11 @@
   padding-top: 60px;
   padding-right: 20px;
   padding-left: 20px
+}
+
+.shadow-correction {
+  text-shadow: 2px 2px 0px var(--background-color);
+  text-decoration: none;
 }
 
 .main__title {
@@ -260,10 +270,15 @@
   grid-column-start: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19.75px;
 }
+
+.title__guide-correction {
+  font-weight: 400;
+}
+
 .pictures-exp {
-  padding-top: 78px;
+  padding-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
@@ -316,7 +331,7 @@
 .footer {
   position: relative;
   min-height: 100vh;
-  margin-top: 62px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   grid-template-rows: repeat(3, 1fr);
@@ -371,6 +386,7 @@
 
   .main_bot-section {
     column-gap: 20px;
+    padding-top: 79px;
   }
 
   .footer {
@@ -380,7 +396,7 @@
 
   .footer-title {
     padding-top: 180px;
-    font-size: 121px;
+    font-size: 120px;
   }
 }
 
@@ -430,7 +446,7 @@
   }
 
   .content-main {
-    padding-top: 38px;
+    padding-top: 40px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -463,7 +479,7 @@
   .pictures-exp {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 48px;
+    padding-top: 50px;
     gap: 10.1px;
   }
 
@@ -496,7 +512,7 @@
   }
 
   .footer {
-    margin-top: 41px;
+    margin-top: 40px;
     grid-template-rows: repeat(3, 1fr) 0.5fr;
     min-height: 80vh;
   }
