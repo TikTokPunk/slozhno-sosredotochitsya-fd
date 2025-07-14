@@ -5,10 +5,6 @@
 */
 
 :root.theme-dark {
-  --bg-image-dark: url('../images/cover-image-dark.png');
-  --dark-title-color: #DB00FF;
-  --dark-background-color: #FF0070;
-  --dark-text-color: #F1B2CE;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
