@@ -441,10 +441,6 @@
     padding-bottom: 20px;
   }
 
-  .main_why-section {
-    grid-template-columns: 1fr;
-  }
-
   .main_what-section {
     padding-top: 50px;
   }
