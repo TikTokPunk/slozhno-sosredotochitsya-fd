@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'IBM Plex mono', 'Courier New', Courier, monospace, sans-serif;
-  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
@@ -52,21 +51,20 @@
   line-height: 24px;
   position: absolute;
   top: 20px;
-  right: 27px;
+  right: 30px;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 17.2px;
 }
 
 .rec-label::after {
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   content: "";
   display: inline-block;
   background-color: var(--background-color);
-  box-shadow: 0 0 5px var(--background-color);
+  box-shadow: 0 0 4px 3px var(--background-color);
   margin-inline-start: 10px;
-  
 }
 
 .header__theme-menu {
@@ -79,12 +77,12 @@
   display: flex;
   gap: 10px;
   font-size: 17.5px;
+  margin-top: 2px;
 }
 
 .header__theme-menu-item {
   height: 24px;
 }
-
 
 .header__theme-menu-button {
   padding: 0 13px;
@@ -96,13 +94,12 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: 1px solid var(--button-color);
+  border-color: 2px solid var(--button-color);
   pointer-events: none;
-  margin-top: 2px;
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--button-color);
+  border: 1px solid color-mix(in srgb, var(--button-color) 40%, transparent);
 }
 
 .header__theme-menu-button:focus {
@@ -110,7 +107,10 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-color: 1px solid var(--button-color);
+  border-bottom-color: var(--button-color);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
 }
 
 .header__text {
@@ -129,6 +129,7 @@
 }
 
 .header__title {
+  color: var(--par-color);
   display: flex;
   align-self: end;
   margin: auto 21px;
@@ -138,7 +139,6 @@
 
 .header__title-decoration {
   background-color: var(--background-color);
-  color: var(--subtitles-color);
   justify-content: end;
   background-size: cover;
   font-weight: 700;
@@ -157,12 +157,25 @@
 }
 
 .shadow-correction {
-  text-shadow: 2px 2px 0px var(--background-color);
   text-decoration: none;
+  text-shadow: 2px 2px 0px var(--background-color);
+  border: 1px solid transparent;
+  display: inline-block;
+}
+
+.shadow-correction:hover {
+  border-bottom-color: currentColor;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.shadow-correction:focus {
+  border-color: 1px solid var(--par-main-color);
 }
 
 .main__title {
-  color: var(--background-color);
+  color: var(--text-color);
   width: 100%;
 }
 
@@ -187,7 +200,7 @@
 }
 
 .main__paragraph {
-  color: var(--text-color);
+  color: var(--par-main-color);
   font-family: 'IBM Plex mono', 'Courier New', Courier, monospace, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -347,7 +360,7 @@
   }
 
   .header__text {
-    padding: 150px 0 92px;
+    padding: 148px 0 92px;
     gap: 128px;
   }
 
@@ -412,7 +425,7 @@
   }
 
  .header__text {
-    padding: 73px 0 76px 10px;
+    padding: 71px 0 76px 10px;
     gap: 51px;
   }
 
