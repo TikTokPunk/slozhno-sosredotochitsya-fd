@@ -161,6 +161,7 @@
   text-shadow: 2px 2px 0px var(--background-color);
   border: 1px solid transparent;
   display: inline-block;
+  line-height: 22.4px;
 }
 
 .shadow-correction:hover {
@@ -251,7 +252,7 @@
 }
 
 .main_how-section {
-  padding-top: 80px;
+  padding-top: 78px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content;
@@ -372,6 +373,10 @@
     column-gap: 20px;
   }
 
+  .main_what-section {
+    padding-top: 78px;
+  }
+
   .explanation-container {
     display: flex;
     flex-direction: column;
@@ -420,8 +425,9 @@
   }
 
   .rec-label {
-    top: 10px;
+    top: 11px;
     right: 18px;
+    font-size: 18px;
   }
 
  .header__text {
@@ -451,7 +457,7 @@
 
   .main__topic,
   .main__topic_solution {
-    padding-bottom: 20px;
+    padding-bottom: 19px;
   }
 
   .main_what-section {
