@@ -104,6 +104,10 @@
 
 .header__theme-menu-button:focus {
   outline: 0;
+  border-bottom-color: var(--button-color);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
 }
 
 .header__theme-menu-button:focus-visible {
