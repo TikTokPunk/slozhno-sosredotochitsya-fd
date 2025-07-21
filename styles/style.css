@@ -180,7 +180,7 @@
 }
 
 .main__title {
-  color: var(--text-color);
+  color: var(--title-main-color);
   width: 100%;
 }
 
