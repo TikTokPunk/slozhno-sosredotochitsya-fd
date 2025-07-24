@@ -1,4 +1,21 @@
+/* Светлая тема по умолчанию */
 :root {
+  --bg-image: none;
+  --title-color: #FFC2E6;
+  --background-color: #FF8DCB;
+  --text-color: #353430;
+  --background-color-page: #FFF1F7;
+  --button-color: #353430;
+  --par-color: #353430;
+  --par-main-color: #353430;
+  --subtitles-color: #353430;
+  --title-main-color: #353430;
+  --label-color: #FF0070; /* REC по умолчанию скрыт в светлой теме */
+  --rec-display: none;
+}
+
+/* Темная тема */
+:root.theme-dark {
   --bg-image: url('../images/cover-image-dark.png');
   --title-color: #DB00FF;
   --background-color: #FF0070;
@@ -9,4 +26,23 @@
   --par-color: #000028;
   --par-main-color: #F1B2CE;
   --title-main-color: #FF0070;
+  --label-color: #FF0070; /* Показываем REC в темной теме */
+  --rec-display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url('../images/cover-image-dark.png');
+    --title-color: #DB00FF;
+    --background-color: #FF0070;
+    --button-color: #FF0070;
+    --text-color: #FF0070;
+    --subtitles-color: #000028;
+    --background-color-page: #000028;
+    --par-color: #000028;
+    --par-main-color: #F1B2CE;
+    --title-main-color: #FF0070;
+    --rec-color: #FF0070;
+    --rec-display: inline-block;
+  }
 }
