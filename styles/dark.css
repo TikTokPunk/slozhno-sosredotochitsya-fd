@@ -1,9 +1,31 @@
-/*
-
 :root.theme-dark {
-
+  --bg-image: url('../images/cover-image-dark.png');
+  --title-color: #DB00FF;
+  --background-color: #FF0070;
+  --button-color: #FF0070;
+  --text-color: #FF0070;
+  --subtitles-color: #000028;
+  --background-color-page: #000028;
+  --par-color: #000028;
+  --par-main-color: #F1B2CE;
+  --title-main-color: #FF0070;
+  --label-color: #FF0070;
+  --rec-display: inline-block;
 }
 
-.theme-dark .page {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url('../images/cover-image-dark.png');
+    --title-color: #DB00FF;
+    --background-color: #FF0070;
+    --button-color: #FF0070;
+    --text-color: #FF0070;
+    --subtitles-color: #000028;
+    --background-color-page: #000028;
+    --par-color: #000028;
+    --par-main-color: #F1B2CE;
+    --title-main-color: #FF0070;
+    --rec-color: #FF0070;
+    --rec-display: inline-block;
+  }
 }
-*/
